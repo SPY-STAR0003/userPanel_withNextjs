@@ -23,11 +23,24 @@
   justify-content: left;
 }
 
+.flexRight {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
 .flexSpaceAround {
   display: flex;
   flex-direction: row !important;
   justify-content: space-around !important;
   align-items: center;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
 
 .flexAlignStart {
