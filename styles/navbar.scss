@@ -51,3 +51,15 @@
     }
 }
 
+.navbar.black {
+    .rightNav {
+        .navbarItem::after {
+            border-bottom: 2px solid #2c3e50;
+        }
+    }
+    .leftNav {
+        .showTitleBtn {
+            border: 2px solid #2c3e50;
+        }
+    }
+}

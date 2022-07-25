@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.9",
     "@reduxjs/toolkit": "^1.8.3",
     "next": "12.2.2",
     "persian-number": "^1.5.1",
