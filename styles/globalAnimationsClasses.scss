@@ -62,8 +62,13 @@
 }
 
 // transition =========================
-.smallScale {
+
+.smallScale, .scale-1 {
   transition: all .4s;
+}
+
+.scale-1:hover {
+  transform: scale(1.1);
 }
 
 .smallScale:hover {

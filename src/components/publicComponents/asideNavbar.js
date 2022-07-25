@@ -8,7 +8,7 @@ const AsideNavbar = ({width}) => {
     return (
         <aside className={`${width} selfTop`}>
             <div className="asideNav flexColumn">
-                <header className="title mb-3 pr-4 fs-12 bold-9"> راحت تر انتخاب کنید ... </header>
+                {/* <header className="title mb-3 pr-4 fs-12 bold-9"> راحت تر انتخاب کنید ... </header> */}
                 <div className="asideNavListTitle flexColumn">
                     <header className="flexAlignCenter ml-6 bold-6 ptb-4 pr-4 redPeach">
                         <FaBuffer className="fs-12 ml-3" />

@@ -8,7 +8,7 @@ const Home = () => {
         <div className={"homePage flexRight relative"}>
             <Navbar
                 color={"white"}
-                isFixed={"true"}
+                isFixed={true}
             />
             <HomeContent />
             <SocialNetworks />

@@ -1,8 +1,15 @@
-import { Card, User, Text, Link } from "@nextui-org/react";
+// react & next
+import propTypes from "prop-types";
 
-const ArticleCard = () => {
+// libraries
+import { Card, User, Text } from "@nextui-org/react";
+
+const ArticleCard = ({width, classes}) => {
   return (
-    <Card css={{ p: "$6", mw: "30%" , margin: " .8rem 1rem" }}>
+    <Card
+      css={{ p: "$6", mw: `${width}` , margin: " .8rem 1rem" }}
+      className={`${classes}`}
+    >
       <Card.Header>
         <User
             src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
@@ -17,6 +24,11 @@ const ArticleCard = () => {
       </Card.Body>
     </Card>
   );
+}
+
+ArticleCard.propTypes = {
+  width : propTypes.string,
+  classes : propTypes.string,
 }
 
 export default ArticleCard;
