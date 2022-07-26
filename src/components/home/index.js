@@ -11,7 +11,9 @@ const Home = () => {
                 isFixed={true}
             />
             <HomeContent />
-            <SocialNetworks />
+            <SocialNetworks
+                isAbsolute={true}
+            />
         </div>
     )
 }

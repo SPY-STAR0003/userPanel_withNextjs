@@ -6,12 +6,12 @@ import {FaTelegram, FaTwitterSquare, FaGithub, FaLinkedin, FaYoutube } from "rea
 
 const SocialNetworks = ({isAbsolute, width, classes, size, white }) => {
     return (
-        <div className={`contact ml-6 ${size} ${width} dFlex ${classes} ${isAbsolute ? "absBottomLeft" : ""}`}>
-            <FaTelegram color={`${white?"white":"dodgerblue"} `} className="mrl-1 scale-1" />
-            <FaGithub color={`${white?"white":"black"} `} className="mrl-1 scale-1" />
-            <FaLinkedin color={`${white?"white":"blue"} `} className="mrl-1 scale-1" />
-            <FaYoutube color={`${white?"white":"red"} `} className="mrl-1 scale-1" />
-            <FaTwitterSquare color={`${white?"white":"skyblue"} `} className="mrl-1 scale-1" />
+        <div className={`contact ml-6 ${size} ${width} dFlex flexLeft mtb-4 ${classes} ${isAbsolute ? "absBottomLeft" : ""}`}>
+            <FaTelegram color={`${white?"white":"dodgerblue"} `} className="mrl-1 scale-1 pointer" />
+            <FaGithub color={`${white?"white":"black"} `} className="mrl-1 scale-1 pointer" />
+            <FaLinkedin color={`${white?"white":"blue"} `} className="mrl-1 scale-1 pointer" />
+            <FaYoutube color={`${white?"white":"red"} `} className="mrl-1 scale-1 pointer" />
+            <FaTwitterSquare color={`${white?"white":"skyblue"} `} className="mrl-1 scale-1 pointer" />
         </div>
     )
 }
@@ -25,9 +25,11 @@ SocialNetworks.propTypes = {
 }
 
 SocialNetworks.defaultProps = {
+    isAbsolute : false,
     size : "fs-20",
     width : "w-3",
-    white : false
+    white : false,
+    classes : " pointer"
 }
 
 export default SocialNetworks;
