@@ -12,9 +12,7 @@ import ArticlesPageFooter from "./footer";
 const Articles = () => {
     return (
         <div className="articlesPage flexColumn">
-            <NavBar
-                logoSrc="/images/logo.png" 
-            />
+            <NavBar />
             <main className={"articlesPageMain flexColumn w-10 m-4"}>
                 <MostViewsArticles />
                 <BestAuthors />

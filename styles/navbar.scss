@@ -42,9 +42,9 @@
             transition: all .4s;
         }
         .leftNavItem:hover {
-            border-color: dodgerblue;
-            color: dodgerblue;
-            cursor: pointer;
+            border-color: dodgerblue !important;
+            color: dodgerblue !important;
+            cursor: pointer !important;
         }
         .loginBox {
             position: absolute;
@@ -63,6 +63,11 @@
             .nextui-input-clear-button {
                 justify-content: flex-end;
             }
+        }
+    }
+    .leftNav.white {
+        .leftNavItem {
+            border: 1px solid white;
         }
     }
 }

@@ -23,7 +23,7 @@ const BestAuthor = ({ picSrc, size, name, description, score }) => {
                 {description}
             </span>
             <span className="fs-8 bold-5">
-                {PN.convertEnToPe({score})} امتیاز
+                {PN.convertEnToPe(score)} امتیاز
             </span>
         </Grid>
     )

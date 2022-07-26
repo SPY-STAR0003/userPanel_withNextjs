@@ -41,7 +41,7 @@ const NavBar = ({logoSrc, color, isFixed, back}) => {
                     <div className="navbarItem"> درباره ما </div>
                 </Link>
             </div>
-            <div className="leftNav flexCenter w-2 relative">
+            <div className={`leftNav ${color} flexCenter w-2 relative`}>
                 <div className="leftNavItem flexCenter ml-10">
                     <FaBookmark className="fs-16" />
                 </div>
@@ -64,6 +64,7 @@ NavBar.propTypes = {
 }
 
 NavBar.defaultProps = {
+    logoSrc:"/images/logo.png",
     color: "black",
     isFixed: false,
     back: "white"
