@@ -52,6 +52,11 @@
   align-items: center;
 }
 
+.flexAlignEnd {
+  display: flex;
+  align-items: flex-end !important;
+}
+
 .flexColumn {
   display: flex;
   flex-direction: column;
@@ -63,6 +68,10 @@
 
 .selfTop {
   align-self: flex-start;
+}
+
+.selfBottom {
+  align-self: flex-end;
 }
 
 .flexWrap {

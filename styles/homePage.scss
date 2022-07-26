@@ -7,15 +7,4 @@
         animation: fadeOpacityToBottom 2s;
         width: 500px;
     }
-    .contact {
-        animation: fadeOpacityToLeft 2s;
-        width: 15%;
-        svg {
-            transition: all .4s;
-        }
-        svg:hover {
-            cursor: pointer;
-            transform: scale(1.2);
-        }
-    }
 }

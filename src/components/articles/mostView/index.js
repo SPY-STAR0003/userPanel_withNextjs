@@ -6,7 +6,7 @@ import ArticleCard from "../../publicComponents/card";
 const MostViewsArticles = () => {
 
     return (
-        <article className="flexSpaceBetween">
+        <article className="mostViewsArticles flexSpaceBetween">
             <AsideNavbar
                 width="w-2"
             />

@@ -12,10 +12,8 @@ import ArticlesPageFooter from "./footer";
 const Articles = () => {
     return (
         <div className="articlesPage flexColumn">
-            <NavBar 
-                color="redPeach" 
-                isFixed={false}
-                back="backBlueBlack"
+            <NavBar
+                logoSrc="/images/logo.png" 
             />
             <main className={"articlesPageMain flexColumn w-10 m-4"}>
                 <MostViewsArticles />

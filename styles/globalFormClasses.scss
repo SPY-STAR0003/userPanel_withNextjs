@@ -2,7 +2,7 @@
 input, select, textarea {
   outline: none;
   border: none;
-  font-family: Vazirmatn , serif;
+  font-family: Vazirmatn , serif !important;
 }
 
 .inputMedium {
@@ -13,7 +13,8 @@ input, select, textarea {
 }
 
 input::placeholder {
-  font-family: Vazirmatn , serif;
+  font-family: Vazirmatn , serif !important;
+  direction: rtl !important;
 }
 
 form {

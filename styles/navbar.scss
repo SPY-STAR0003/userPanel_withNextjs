@@ -1,6 +1,12 @@
 .navbar {
     animation: fadeOpacityToBottom 2s;
     .rightNav {
+        img {
+            max-width: 5rem;
+            width: 100%;
+        }
+    }
+    .centerNav {
         .navbarItem {
             position: relative;
             margin: 0 2.5rem;
@@ -27,32 +33,42 @@
         }
     }
     .leftNav {
-        .showTitleBtn {
-            border: 2px solid white;
-            padding: .3rem .6rem;
-            font-weight: 700;
-            border-radius: 3rem;
-            animation: fadeOpacityToTop .8s;
-            span {
-                display: none;
-                margin: 0 .5rem 0 1rem;
-                animation: fadeOpacityToRight .4s;
-            }
-            svg {
-                font-size: 2rem;
-            }
+        position: relative;
+        .leftNavItem {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+            transition: all .4s;
         }
-        .showTitleBtn:hover {
+        .leftNavItem:hover {
+            border-color: dodgerblue;
+            color: dodgerblue;
             cursor: pointer;
-            span {
-                display: block;
+        }
+        .loginBox {
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+            width: 23rem;
+            height: 23rem;
+            background: rgba(255, 255, 255, 0.73);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            z-index: 999;
+            animation: fadeOpacityToTop .4s;
+            .nextui-input-clear-button {
+                justify-content: flex-end;
             }
         }
     }
 }
 
 .navbar.black {
-    .rightNav {
+    .centerNav {
         .navbarItem::after {
             border-bottom: 2px solid #2c3e50;
         }
