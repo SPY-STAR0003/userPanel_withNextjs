@@ -4,18 +4,45 @@
         max-width: 1500px;
         width: 100%;
         margin: 0 auto;
-    //     .mostViewsArticles {
-    //         animation: fadeOpacityToBottom .4s;
-    //     }
-    //     .bestAuthors {
-    //         animation: fadeOpacityToBottom .4s;
-    //     }
-    //     .suggestedArticles {
-    //         animation: fadeOpacityToBottom .4s;
-    //     }
     }
-    // footer {
-    //     animation: fadeOpacityToTop .4s;
-    // }
+}
+
+.searchBox {
+    background: url("/images/library3.jpg") no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 25rem !important;
+    .nextui-input-main-container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 60%;
+        label {
+            align-self: flex-start;
+            color: aliceblue;
+        }
+        input {
+            padding-right: 1.5rem;
+        }
+        input::placeholder {
+            font-size: 1rem !important;
+        }
+        .nextui-input-content {
+            width: 17%;
+            .searchBoxBtn {
+                padding: .6rem .8rem;
+                background-color: #00cec9;
+                font-size: .9rem;
+                text-align: center;
+                color: white;
+                border-radius: 1.5rem;
+                transition: all .4s;
+            }
+            .searchBoxBtn:hover {
+                cursor: pointer !important;
+                background-color: dodgerblue;
+            }
+        }
+    }
 }
 

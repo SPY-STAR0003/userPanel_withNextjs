@@ -6,7 +6,7 @@ const BestAuthors = () => {
     return (
         <article className="bestAuthors">
             <header className="mt-12 mb-9 pr-6 textCenter">
-                <h3 className="fs-15 bold-7"> برترین نویسندگان کافه مقاله </h3>
+                <h3 className="fs-18 bold-7"> برترین نویسنده های کافه مقاله را بشناسید ... </h3>
             </header>
             <main className="flexCenter">
                 <BestAuthor

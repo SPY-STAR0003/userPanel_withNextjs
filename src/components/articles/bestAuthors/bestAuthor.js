@@ -13,7 +13,7 @@ const BestAuthor = ({ picSrc, size, name, description, score }) => {
                 css={{ size: `$${size}` }}
                 zoomed
                 bordered
-                color="error"
+                color="primary"
                 className="pointer"
             />
             <span className="w-10 textCenter mt-2 mb-2 fs-10 bold-7"> 
@@ -22,7 +22,7 @@ const BestAuthor = ({ picSrc, size, name, description, score }) => {
             <span className="bold-3">
                 {description}
             </span>
-            <span className="fs-8 bold-5">
+            <span className="fs-8 bold-5 gray">
                 {PN.convertEnToPe(score)} امتیاز
             </span>
         </Grid>
