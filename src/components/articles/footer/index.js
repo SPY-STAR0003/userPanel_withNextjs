@@ -1,23 +1,41 @@
+// next & react
+import Link from "next/Link";
 
 // components
-import SocialNetworks from "../../home/SocialNetworks";
+import SocialNetworks from "../../publicComponents/SocialNetworks";
 
 const ArticlesPageFooter = () => {
     return (
-        <footer className="backBlueBlack">
-            <div className="flexSpaceBetween">
-                <div className="dFlex w-7 pr-5">
-                    <div className="redPeach fs-8 bold-7 mrl-3 pointer "> مقالات دارای گواهینامه </div>
-                    <div className="redPeach fs-8 bold-7 mrl-3 pointer "> انتقادات و پیشنهادات </div>
-                    <div className="redPeach fs-8 bold-7 mrl-3 pointer "> درخواست عضویت به عنوان مدیر وبسایت </div>
+        <footer>
+            <div  className="flexSpaceBetween mt-15 pb-8"> 
+                <div className="flexCenter w-3">
+                    <Link href={"/articles"}>
+                        <div className="prl-5 bold-6 fs-10 pointer"> مقالات </div>
+                    </Link>
+                    <Link href={"/register"}>
+                        <div className="prl-5 bold-6 fs-10 pointer"> ثبت نام </div>
+                    </Link>
+                    <Link href={"/discussionHall"}>
+                        <div className="prl-5 bold-6 fs-10 pointer"> تالار گفت و گو </div>
+                    </Link>
                 </div>
-                <SocialNetworks 
-                    isAbsolute={false}
-                    width={"w-3"}
-                    white={true}
-                    classes={"flexLeft mtb-4"}
-                    size={"fs-14"}
-                />
+                <div className="fs-8 gray w-4 textCenter">
+                    <Link href={"/"}>
+                        <img className="w-2 pointer" src="/images/logo.png" alt="logo"/>
+                    </Link>
+                </div>
+                <div className="w-3"> 
+                    <SocialNetworks
+                        isAbsolute={false}
+                        width={"w-10"}
+                        white={false}
+                        classes={"flexCenter"}
+                        size={"fs-20"}
+                    />
+                </div>
+            </div>
+            <div style={{ borderTop : "1px solid #efefef" }} className="prl-15 ptb-8 flexCenter w-10">
+                <span className="fs-7"> COPYRIGHT © 2022 MOHAMMAD ZOURMAND </span>
             </div>
         </footer>
     )

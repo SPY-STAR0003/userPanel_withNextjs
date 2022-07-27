@@ -6,7 +6,7 @@ import {FaTelegram, FaTwitterSquare, FaGithub, FaLinkedin, FaYoutube } from "rea
 
 const SocialNetworks = ({isAbsolute, width, classes, size, white }) => {
     return (
-        <div className={`contact ml-6 ${size} ${width} dFlex flexLeft mtb-4 ${classes} ${isAbsolute ? "absBottomLeft" : ""}`}>
+        <div className={`contact ml-6 ${size} ${width} dFlex mtb-4 ${classes} ${isAbsolute ? "absBottomLeft" : ""}`}>
             <FaTelegram color={`${white?"white":"dodgerblue"} `} className="mrl-1 scale-1 pointer" />
             <FaGithub color={`${white?"white":"black"} `} className="mrl-1 scale-1 pointer" />
             <FaLinkedin color={`${white?"white":"blue"} `} className="mrl-1 scale-1 pointer" />

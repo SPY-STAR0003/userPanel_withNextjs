@@ -39,7 +39,7 @@ const LoginBox = () => {
                 <Link href="/register">
                     <span className="mt-5 mb-3 fs-8 blue hoverUnderline pointer"> اگر در کافه مقاله ثبت نام نکرده اید، کلیک کنید </span>
                 </Link>
-                <Link href="/forgetPassword">
+                <Link href="/register/forgetPassword">
                     <span className="mb-3 fs-8 blue hoverUnderline pointer"> رمزعبور خود را فراموش کرده ام! </span>
                 </Link>
             </form>

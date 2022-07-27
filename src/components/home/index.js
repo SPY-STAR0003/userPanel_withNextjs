@@ -1,6 +1,6 @@
 import HomeContent from "./homeContent";
 import Navbar from "../publicComponents/navbar";
-import SocialNetworks from "./SocialNetworks";
+import SocialNetworks from "./../publicComponents/SocialNetworks";
 
 const Home = () => {
 
@@ -13,6 +13,7 @@ const Home = () => {
             <HomeContent />
             <SocialNetworks
                 isAbsolute={true}
+                classes={"flexLeft"}
             />
         </div>
     )

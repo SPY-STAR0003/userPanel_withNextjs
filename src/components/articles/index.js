@@ -5,13 +5,12 @@
 // components
 import NavBar from "../publicComponents/navbar";
 import SearchBox from "../publicComponents/searchBox";
-import MostViewsArticles from "./mostView";
 import ImportantLinks from "./importantLinks";
 import SortArticles from "./sortArticles";
 import BestAuthors from "./bestAuthors";
-import SuggestedArticles from "./Suggested";
 import ArticlesPageFooter from "./footer";
-import Sentence from "./sentence"
+import Sentence from "./sentence";
+import Subscribe from "./subscribe";
 
 const Articles = () => {
     return (
@@ -22,9 +21,8 @@ const Articles = () => {
                 <ImportantLinks />
                 <SortArticles />
                 <Sentence />
-                {/* <MostViewsArticles /> */}
                 <BestAuthors />
-                <SuggestedArticles />
+                <Subscribe />
             </main>
             <ArticlesPageFooter />
         </div>
