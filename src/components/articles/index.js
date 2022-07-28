@@ -5,18 +5,18 @@
 // components
 import NavBar from "../publicComponents/navbar";
 import SearchBox from "../publicComponents/searchBox";
-import ImportantLinks from "./importantLinks";
-import SortArticles from "./sortArticles";
-import BestAuthors from "./bestAuthors";
-import ArticlesPageFooter from "./footer";
-import Sentence from "./sentence";
-import Subscribe from "./subscribe";
+import ImportantLinks from "./main/importantLinks";
+import SortArticles from "./main/sortArticles";
+import BestAuthors from "./main/bestAuthors";
+import ArticlesPageFooter from "./public/footer";
+import Sentence from "./main/sentence";
+import Subscribe from "./main/subscribe";
 
 const Articles = () => {
     return (
         <div className="articlesPage flexColumn">
             <NavBar />
-            <SearchBox />
+            <SearchBox heightClass="h-8" />
             <main className={"articlesPageMain flexColumn w-10"}>
                 <ImportantLinks />
                 <SortArticles />

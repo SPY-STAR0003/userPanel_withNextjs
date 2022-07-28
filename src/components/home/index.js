@@ -1,6 +1,6 @@
 import HomeContent from "./homeContent";
 import Navbar from "../publicComponents/navbar";
-import SocialNetworks from "./../publicComponents/SocialNetworks";
+import SocialNetworks from "./../publicComponents/socialNetworks";
 
 const Home = () => {
 

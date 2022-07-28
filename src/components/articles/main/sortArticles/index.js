@@ -3,7 +3,7 @@
 import {FaLaptopCode, FaPeopleArrows, FaPenNib, FaSatellite, FaSchool, FaSmileBeam, FaSpellCheck, FaTableTennis, FaGlobeAsia, FaAtom} from "react-icons/fa";
 
 // components
-import BoxSection from "../../publicComponents/boxSection";
+import BoxSection from "../../../publicComponents/boxSection";
 
 
 const SortArticles = () => {

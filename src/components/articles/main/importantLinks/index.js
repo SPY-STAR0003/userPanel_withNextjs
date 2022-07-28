@@ -3,7 +3,7 @@
 import {FaFireAlt, FaHeart, FaBuffer, FaRegGrin, FaStopwatch, FaUniversity} from "react-icons/fa";
 
 // components
-import BoxSection from "../../publicComponents/boxSection";
+import BoxSection from "../../../publicComponents/boxSection";
 
 const ImportantLinks = () => {
 
@@ -16,6 +16,7 @@ const ImportantLinks = () => {
                     boxTitle={"آخرین مقالات منتشرشده"}
                     boxDescription={"شامل تمامی مقالات منتشر شده در هفته گذشته به ترتیب زمان انتشار"}
                     size={"w-3"}
+                    href="/articles/lastestArticles"
                 />
                 <BoxSection
                     boxIcon={<FaFireAlt />}

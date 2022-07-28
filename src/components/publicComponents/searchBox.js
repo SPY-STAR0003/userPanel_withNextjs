@@ -1,3 +1,5 @@
+// next & react
+import propTypes from "prop-types";
 
 // libraries
 import { Input } from '@nextui-org/react';
@@ -5,12 +7,12 @@ import { Input } from '@nextui-org/react';
 // components
 
 
-const SearchBox = () => {
+const SearchBox = ({heightClass}) => {
     const clicker = () => {
         console.log(456548)
     }
     return (
-        <article className="searchBox flexCenter">
+        <article className={`searchBox flexCenter ${heightClass}`}>
             <Input
                 id={"react-aria-1"}
                 aria-label={"SearchBox"}
@@ -27,6 +29,10 @@ const SearchBox = () => {
             />
         </article>
     )
+}
+
+SearchBox.propTypes = {
+    heightClass: propTypes.string,
 }
 
 export default SearchBox;

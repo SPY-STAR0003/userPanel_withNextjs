@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 // next & react
 import Link from "next/Link";
 
 // components
-import SocialNetworks from "../../publicComponents/SocialNetworks";
+import SocialNetworks from "../../../publicComponents/socialNetworks";
 
 const ArticlesPageFooter = () => {
     return (

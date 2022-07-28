@@ -10,9 +10,10 @@ const Subscribe = () => {
                 <Input
                     bordered
                     className="mtb-6"
-                    // color="primary"
                     placeholder="Your E-mail" 
                     size="lg"
+                    id="react-aria-2"
+                    aria-label = "react-aria-2"
                 />
                 <Button auto className="mt-4">
                     به اشتراک گذاشتن

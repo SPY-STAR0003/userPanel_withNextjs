@@ -5,7 +5,7 @@ import Link from "next/link";
 import propTypes from "prop-types"
 
 // libraries
-import {FaUserAlt, FaBookmark, FaAngleDown} from "react-icons/fa";
+import {FaUserAlt, FaBookmark} from "react-icons/fa";
 
 // components
 import LoginBox from "./loginBox";

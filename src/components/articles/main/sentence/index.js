@@ -1,7 +1,7 @@
 
 
 // components
-import FixedPicture from "../../publicComponents/fixedPicture"
+import FixedPicture from "../../../publicComponents/fixedPicture"
 
 const Sentence = () => {
 
