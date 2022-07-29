@@ -6,7 +6,16 @@ import ArticleCard from "../../publicComponents/articleCard";
 
 const ArticleCards = () => {
     return (
-        <article className="articleCards dFlex">
+        <article className="articleCards flexSpaceAround flexWrap">
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
             <ArticleCard />
         </article>
     )

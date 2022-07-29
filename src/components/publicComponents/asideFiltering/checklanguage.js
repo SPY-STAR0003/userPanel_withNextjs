@@ -21,7 +21,7 @@ const CheckLanguage = () => {
             <header>
                 <h5> دسته بندی زبان مقالات </h5> 
             </header>
-            <main className="flexCenter flexWrap letter">
+            <main className="flexCenter flexWrap mt-3">
                 <Dropdown>
                     <Dropdown.Button id="asideFilteringDropdown2" color="error" css={{ tt: "capitalize", direction : "ltr" }} >
                         {selectLanguage}

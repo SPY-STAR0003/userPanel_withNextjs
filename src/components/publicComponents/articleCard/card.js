@@ -1,4 +1,6 @@
-
+// libraries
+import {FaHeart, FaEye ,FaCommentDots, FaRegStar} from "react-icons/fa";
+import PN from "persian-number";
 
 const Card = ({children}) => {
     return (
@@ -40,6 +42,14 @@ const HeaderStatus = ({children}) => {
     )
 }
 
+const Label = ({children, isSubmit}) => {
+    return (
+        <div className="cardLabel">
+            {children}
+        </div>
+    )
+}
+
 const Body = ({children}) => {
     return (
         <main className="cardBody p-3 fs-9 lineHeight-3">
@@ -51,7 +61,22 @@ const Body = ({children}) => {
 const Options = ({children}) => {
     return (
         <div className="cardOptions">
-            {children}
+            <div className="seen flexColumn flexCenter mtb-3 fs-12">
+                <FaEye />
+                <div className="mt-1 bold-7"> {PN.convertEnToPe(125)} </div>
+            </div>
+            <div className="star flexColumn flexCenter mtb-3 fs-12">
+                <FaRegStar />
+                <div className="mt-1 bold-7"> {PN.convertEnToPe(4.3)} </div>
+            </div>
+            <div className="like flexColumn flexCenter mtb-3 fs-12">
+                <FaHeart />
+                <div className="mt-1 bold-7"> {PN.convertEnToPe(43)} </div>
+            </div>
+            <div className="comment flexColumn flexCenter mtb-3 fs-12">
+                <FaCommentDots />
+                <div className="mt-1 bold-7"> {PN.convertEnToPe(2)} </div>
+            </div>
         </div>
     )
 }
@@ -74,6 +99,7 @@ Card.HeaderProfile = HeaderProfile;
 Card.HeaderText = HeaderText;
 Card.HeaderTitle = HeaderTitle;
 Card.HeaderStatus = HeaderStatus;
+Card.Label = Label;
 Card.Body = Body;
 Card.Options = Options;
 Card.Footer = Footer;
