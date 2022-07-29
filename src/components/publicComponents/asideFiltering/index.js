@@ -1,10 +1,5 @@
 // next & react
-import { useState, useMemo } from 'react';
-
-
-// libraies
-import { Dropdown, Checkbox, Spacer } from "@nextui-org/react";
-import {FaCheckDouble, FaFilter, FaAngleDoubleLeft, FaAngleDoubleRight} from "react-icons/fa";
+import {useState} from 'react';
 
 // components
 import CheckElphebet from "./checkElphebet";
@@ -12,6 +7,7 @@ import CheckSort from "./checkSort";
 import CheckLanguage from "./checkLanguage";
 import CheckTime from "./checkTime";
 import SpecialFilters from './specialFilters';
+import FiltersBtns from './filtersBtns';
 
 const AsideFilteriing = () => {
 
@@ -32,27 +28,9 @@ const AsideFilteriing = () => {
                         <CheckLanguage />
                         <CheckTime />
                     </main>
-                    {
-                        showFilters
-                            ?
-                                <>
-                                    <div className="submitFilters">
-                                        <FaCheckDouble />
-                                    </div>
-                                    <div className="showFilters">
-                                        <FaFilter />
-                                        <FaAngleDoubleRight onClick={() => setShowFilters(!showFilters)} />
-                                    </div> 
-                                </>
-                            :
-                                <div className="showFilters">
-                                    <FaFilter />
-                                    <FaAngleDoubleLeft className='mr-3' onClick={() => setShowFilters(!showFilters)} />
-                                </div>
-                    }
+                    <FiltersBtns setShowFilters={setShowFilters} showFilters={showFilters} />
                 </section>
             </article>
-
         </>
     )
 }

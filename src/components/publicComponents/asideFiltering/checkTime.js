@@ -2,8 +2,10 @@
 import { useState, useMemo } from 'react';
 
 // libraies
-import { Dropdown, Checkbox, Spacer } from "@nextui-org/react";
-import {FaCheckDouble, FaFilter, FaAngleDoubleLeft, FaAngleDoubleRight} from "react-icons/fa";
+import { Dropdown } from "@nextui-org/react";
+
+// schemas
+import { timeFilterItems } from "../../../schemas/asideFiltering";
 
 const CheckTime = () => {
 
@@ -13,8 +15,6 @@ const CheckTime = () => {
       () => Array.from(selectedTime).join(", ").replaceAll("_", " "),
       [selectedTime]
     );
-
-    const timeFilterItems = ["همه","کمتر از ده دقیقه","ده تا سی دقیقه","سی دقیقه تا یک ساعت","بیش از یک ساعت",]
 
     return (
         <section className='mt-5'>
@@ -35,7 +35,7 @@ const CheckTime = () => {
                         onSelectionChange={setSelectedTime}
                     >
                         {
-                            timeFilterItems.map((item) => (
+                            timeFilterItems.map(item => (
                                 <Dropdown.Item key={item}>{item}</Dropdown.Item>
                             ))
                         }

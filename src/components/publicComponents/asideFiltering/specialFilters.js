@@ -2,8 +2,10 @@
 import { useState, useMemo } from 'react';
 
 // libraies
-import { Dropdown, Checkbox, Spacer } from "@nextui-org/react";
-import {FaCheckDouble, FaFilter, FaAngleDoubleLeft, FaAngleDoubleRight} from "react-icons/fa";
+import { Dropdown } from "@nextui-org/react";
+
+// schemas
+import { filterItems } from "../../../schemas/asideFiltering";
 
 const SpecialFilters = () => {
 
@@ -13,9 +15,6 @@ const SpecialFilters = () => {
       () => Array.from(selectedFilters).join(", ").replaceAll("_", " "),
       [selectedFilters]
     );
-
-
-    const filterItems = [ "همه","آخرین مقالات منتشر شده", "پربحث ترین مقالات", "پربازدیدترین مقالات", "محبوب ترین مقالات", "مقالات تایید شده از نظر اساتید", "فقط مقالات تکمیل شده", "فقط مقالات تکمیل نشده", "فقط مقالات نیاز به ترجمه"]
 
     return (
         <section className='mt-5'>
@@ -36,7 +35,7 @@ const SpecialFilters = () => {
                         onSelectionChange={setSelectedFilters}
                     >
                         {
-                            filterItems.map((item, index) => (
+                            filterItems.map(item => (
                                 <Dropdown.Item key={item}>{item}</Dropdown.Item>
                             ))
                         }

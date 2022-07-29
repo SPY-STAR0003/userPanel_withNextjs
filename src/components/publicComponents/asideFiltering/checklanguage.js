@@ -2,8 +2,10 @@
 import { useState, useMemo } from 'react';
 
 // libraies
-import { Dropdown, Checkbox, Spacer } from "@nextui-org/react";
-import {FaCheckDouble, FaFilter, FaAngleDoubleLeft, FaAngleDoubleRight} from "react-icons/fa";
+import { Dropdown } from "@nextui-org/react";
+
+// schemas
+import { languageFilterItems } from "../../../schemas/asideFiltering";
 
 const CheckLanguage = () => {
 
@@ -13,8 +15,6 @@ const CheckLanguage = () => {
       () => Array.from(selectedLanguage).join(", ").replaceAll("_", " "),
       [selectedLanguage]
     );
-
-    const languageFilterItems = [ "همه","پارسی", "انگلیسی", "عربی", "اسپانیایی", "فرانسوی", "آلمانی", " ترکی ", "چینی" ]
 
     return (
         <section className='mt-5'>
@@ -35,7 +35,7 @@ const CheckLanguage = () => {
                         onSelectionChange={setSelectedLanguage}
                     >
                         {
-                            languageFilterItems.map((item, index) => (
+                            languageFilterItems.map(item => (
                                 <Dropdown.Item key={item}>{item}</Dropdown.Item>
                             ))
                         }

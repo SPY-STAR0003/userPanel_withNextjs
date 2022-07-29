@@ -2,8 +2,10 @@
 import { useState, useMemo } from 'react';
 
 // libraies
-import { Dropdown, Checkbox, Spacer } from "@nextui-org/react";
-import {FaCheckDouble, FaFilter, FaAngleDoubleLeft, FaAngleDoubleRight} from "react-icons/fa";
+import { Dropdown } from "@nextui-org/react";
+
+// schemas
+import { sortFilterItems } from "../../../schemas/asideFiltering";
 
 const CheckSort = () => {
 
@@ -13,9 +15,6 @@ const CheckSort = () => {
       () => Array.from(selectedSort).join(", ").replaceAll("_", " "),
       [selectedSort]
     );
-
-
-    const sortFilterItems = [ "همه","تکنولوژی", "علم و دانش", "فضا", "ورزشی", "تاریخ و جغرافیا", "داستان و رمان", "درس و دانشگاه", "کودکانه"]
 
     return (
         <section className='mt-5'>
@@ -36,7 +35,7 @@ const CheckSort = () => {
                         onSelectionChange={setSelectedSort}
                     >
                         {
-                            sortFilterItems.map((item, index) => (
+                            sortFilterItems.map(item => (
                                 <Dropdown.Item key={item}>{item}</Dropdown.Item>
                             ))
                         }

@@ -1,10 +1,8 @@
-// next & react
-import { useState, useMemo } from 'react';
 
+// schemas
+import { elphebet } from "../../../schemas/asideFiltering";
 
 const CheckElphebet = () => {
-
-    const elphebet = ["ا","ب","پ","ت","ث","ج","چ","ح","خ","د","ذ","ر","ز","ژ","س","ش","ص","ض","ط","ظ","ع","غ","ف","ق","ک","گ","ل","م","ن","و","ه","ی"]
 
     return (
         <section className="elphebetFiltering mt-3">
