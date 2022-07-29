@@ -42,7 +42,7 @@
         display: flex;
         align-items: center;
         position: absolute;
-        bottom: 1rem;
+        bottom: -2rem;
         left: -1.5rem;
         font-size: 1.5rem;
         padding: .5rem;
@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 50%;
+    bottom: 43%;
     left: -2.6rem;
     font-size: 1.5rem;
     padding: .9rem;
@@ -84,4 +84,8 @@
 .showFilters:hover {
     transform: translateX(-4px);
     cursor: pointer;
+}
+.showFilters.leftedFilters {
+    padding: 1.5rem 3.5rem 1.5rem .5rem;
+    left: -4.5rem;
 }

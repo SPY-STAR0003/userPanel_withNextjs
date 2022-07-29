@@ -16,7 +16,7 @@ const ImportantLinks = () => {
                     boxTitle={"آخرین مقالات منتشرشده"}
                     boxDescription={"شامل تمامی مقالات منتشر شده در هفته گذشته به ترتیب زمان انتشار"}
                     size={"w-3"}
-                    href="/articles/lastestArticles"
+                    href="/articles/filteredArticles"
                 />
                 <BoxSection
                     boxIcon={<FaFireAlt />}

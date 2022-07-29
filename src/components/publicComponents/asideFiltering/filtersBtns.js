@@ -14,15 +14,15 @@ const FiltersBtns = ({setShowFilters, showFilters}) => {
                             <div className="submitFilters">
                                 <FaCheckDouble />
                             </div>
-                            <div className="showFilters">
+                            <div className="showFilters" onClick={() => setShowFilters(!showFilters)} >
                                 <FaFilter />
-                                <FaAngleDoubleRight onClick={() => setShowFilters(!showFilters)} />
+                                <FaAngleDoubleRight />
                             </div> 
                         </>
                     :
-                        <div className="showFilters">
+                        <div className="showFilters leftedFilters"  onClick={() => setShowFilters(!showFilters)} >
                             <FaFilter />
-                            <FaAngleDoubleLeft className='mr-3' onClick={() => setShowFilters(!showFilters)} />
+                            <FaAngleDoubleLeft className='mr-3'/>
                         </div>
             }
         </>
@@ -30,7 +30,7 @@ const FiltersBtns = ({setShowFilters, showFilters}) => {
 }
 
 FiltersBtns.propTypes = {
-    showFilters : propTypes.string,
+    showFilters : propTypes.bool,
     setShowFilters: propTypes.func
 }
 

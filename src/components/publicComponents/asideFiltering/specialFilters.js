@@ -21,7 +21,7 @@ const SpecialFilters = () => {
             <header>
                 <h5> دسته بندی های خاص </h5> 
             </header>
-            <main className="flexCenter flexWrap letter">
+            <main className="flexCenter flexWrap letter mt-3">
                 <Dropdown>
                     <Dropdown.Button id="asideFilteringDropdown1" color="error" css={{ tt: "capitalize", direction : "ltr" }} >
                         {selectFilters}

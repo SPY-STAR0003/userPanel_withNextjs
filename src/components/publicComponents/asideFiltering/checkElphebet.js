@@ -9,7 +9,7 @@ const CheckElphebet = () => {
             <header>
                 <h5> فهرست الفبـــــایی </h5> 
             </header>
-            <main className="flexCenter flexWrap letter">
+            <main className="flexCenter flexWrap letter mt-3">
                 {
                     elphebet.map((letter , index) => (
                         <span key={index} className="letter flexCenter fs-8 backGray" >

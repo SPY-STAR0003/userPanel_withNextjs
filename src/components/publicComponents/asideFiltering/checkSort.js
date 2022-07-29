@@ -21,7 +21,7 @@ const CheckSort = () => {
             <header>
                 <h5> دسته بندی موضوع مقالات </h5> 
             </header>
-            <main className="flexCenter flexWrap letter">
+            <main className="flexCenter flexWrap letter mt-3">
                 <Dropdown>
                     <Dropdown.Button id="asideFilteringDropdown1" color="error" css={{ tt: "capitalize", direction : "ltr" }} >
                         {selectSort}

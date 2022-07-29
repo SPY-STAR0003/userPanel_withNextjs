@@ -11,7 +11,7 @@ import FiltersBtns from './filtersBtns';
 
 const AsideFilteriing = () => {
 
-    const [showFilters , setShowFilters] = useState(true);
+    const [showFilters , setShowFilters] = useState(false);
 
     return (
         <>

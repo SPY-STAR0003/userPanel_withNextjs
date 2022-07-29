@@ -21,7 +21,7 @@ const CheckTime = () => {
             <header>
                 <h5> دسته بندی زمان موردنیاز برای مطالعه </h5> 
             </header>
-            <main className="flexCenter flexWrap letter">
+            <main className="flexCenter flexWrap letter mt-3">
                 <Dropdown>
                     <Dropdown.Button id="asideFilteringDropdown2" color="error" css={{ tt: "capitalize", direction : "ltr" }} >
                         {selectTime}
