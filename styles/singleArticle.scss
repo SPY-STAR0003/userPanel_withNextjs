@@ -1,0 +1,40 @@
+.singleArticle {
+    .singleArticleMain {
+        width: 93%;
+    }
+    .singleArticleNavbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 .5rem 0 .7rem;
+        border-right: .5px solid rgba(115, 119, 123, 0.2);
+        width: 7%;
+        .topNav {
+            img {
+                filter: grayscale(100%);
+                width: 5rem;
+            }
+        }
+        .middleNav {
+            margin-bottom: 10rem;
+            svg {
+                padding: 0;
+                margin: 1.5rem 0;
+                color: #73777B;
+            }
+            svg:hover {
+                color: #15133C;
+            }
+        }
+        .bottomNav {
+            svg {
+                padding: 0;
+                margin-bottom: 2rem;
+                color: #73777B;
+            }
+            svg:hover {
+                color: #15133C;
+            }
+        }
+    }
+}

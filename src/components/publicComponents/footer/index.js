@@ -3,7 +3,7 @@
 import Link from "next/Link";
 
 // components
-import SocialNetworks from "../../../publicComponents/socialNetworks";
+import SocialNetworks from "../socialNetworks";
 
 const ArticlesPageFooter = () => {
     return (

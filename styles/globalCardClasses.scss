@@ -19,6 +19,14 @@
             width: 20%;
             border-radius: 50%;
         }
+        .headerTitle {
+            transition: all .2s;
+        }
+        .headerTitle:hover {
+            font-weight: 700;
+            transform: translateX(-3px);
+            cursor: pointer;
+        }
     }
     .cardLabel {
         position: absolute;

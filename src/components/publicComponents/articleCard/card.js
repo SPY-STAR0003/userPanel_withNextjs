@@ -1,3 +1,6 @@
+// react & next
+import Link from "next/Link";
+
 // libraries
 import {FaHeart, FaEye ,FaCommentDots, FaRegStar} from "react-icons/fa";
 import PN from "persian-number";
@@ -32,7 +35,9 @@ const HeaderText = ({children}) => {
 
 const HeaderTitle = ({children}) => {
     return (
-        <h5 className="headerTitle fs-10 black"> {children} </h5>
+        <Link href={"./singleArticle"}>
+            <h5 className="headerTitle fs-10 black"> {children} </h5>
+        </Link>
     )
 }
 

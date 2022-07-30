@@ -8,7 +8,7 @@ import propTypes from "prop-types"
 import {FaUserAlt, FaBookmark} from "react-icons/fa";
 
 // components
-import LoginBox from "./loginBox";
+import LoginBox from "../loginBox";
 
 // lazy load
 // const LoginBox = lazy(()=> import("./loginBox")) 

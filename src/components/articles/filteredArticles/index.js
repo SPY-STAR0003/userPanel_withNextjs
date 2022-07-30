@@ -3,7 +3,6 @@
 import AsideFiltering from "../../publicComponents/asideFiltering";
 import Navbar from "../../publicComponents/navbar";
 import ArticleCards from "./articleCards";
-import ArticlesPageFooter from "../public/footer"
 
 const FilteredArticles = () => {
 
@@ -14,7 +13,6 @@ const FilteredArticles = () => {
                 <AsideFiltering />
                 <ArticleCards />
             </main>
-            {/* <ArticlesPageFooter /> */}
         </div>
     )
 }

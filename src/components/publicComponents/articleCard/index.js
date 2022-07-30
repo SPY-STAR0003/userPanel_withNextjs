@@ -5,6 +5,7 @@ import propTypes from 'prop-types';
 import Card from "./card";
 
 const ArticleCard = ({
+    cardLink,
     imgSrc,
     label,
     headerTitle,
@@ -18,7 +19,7 @@ const ArticleCard = ({
             <Card.Header>
                 <Card.HeaderProfile imgSrc={imgSrc}></Card.HeaderProfile>
                 <Card.HeaderText>
-                    <Card.HeaderTitle>{headerTitle}</Card.HeaderTitle>
+                    <Card.HeaderTitle cardLink={cardLink}>{headerTitle}</Card.HeaderTitle>
                     <Card.HeaderStatus> در دسته :  {headerStatus}</Card.HeaderStatus>
                 </Card.HeaderText>
             </Card.Header>

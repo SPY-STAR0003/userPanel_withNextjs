@@ -1,9 +1,12 @@
 
 
+// components
+import SingleArticle from "../../components/articles/singleArticle";
+
 const SingleArticlePage = () => {
 
     return (
-        <h2> SingleArticlePage </h2>
+        <SingleArticle />
     )
 }
 

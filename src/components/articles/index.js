@@ -8,7 +8,7 @@ import SearchBox from "../publicComponents/searchBox";
 import ImportantLinks from "./main/importantLinks";
 import SortArticles from "./main/sortArticles";
 import BestAuthors from "./main/bestAuthors";
-import ArticlesPageFooter from "./public/footer";
+import ArticlesPageFooter from "../publicComponents/footer";
 import Sentence from "./main/sentence";
 import Subscribe from "./main/subscribe";
 
