@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 
 // react & next
 import Link from "next/link";
@@ -8,7 +9,7 @@ import {FaHome, FaFileAlt, FaRegBookmark, FaUsers, FaUserCircle} from "react-ico
 const AsideNavbar = () => {
 
     return (
-        <nav className="singleArticleNavbar height100vh">
+        <nav className="singleArticleNavbar">
             <div className="topNav flexColumn flexCenter mtb-6">
                 <Link href="/">
                     <img src="/images/logo.png" alt="website_logo" className="pointer"/>
@@ -16,20 +17,20 @@ const AsideNavbar = () => {
             </div>
             <div className="middleNav flexColumn flexCenter fs-15">
                 <Link href="/">
-                    <FaHome className="pointer" />
+                    <div><FaHome className="pointer" /></div>
                 </Link>
                 <Link href="/articles">
-                    <FaFileAlt className="pointer" />
+                    <div><FaFileAlt className="pointer" /></div>
                 </Link>
                 <Link href="/discusshall">
-                    <FaUsers className="pointer" />
+                    <div><FaUsers className="pointer" /></div>
                 </Link>
                 <Link href="/register">
-                    <FaRegBookmark className="pointer" />
+                    <div><FaRegBookmark className="pointer" /></div>
                 </Link>
             </div>
             <div className="bottomNav flexColumn flexCenter fs-15">
-                <FaUserCircle className="pointer" />
+                <div><FaUserCircle className="pointer" /></div>
             </div>
         </nav>
     )

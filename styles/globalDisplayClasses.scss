@@ -11,6 +11,12 @@
   display: flex;
 }
 
+.flexColumnJustifyCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .flexCenter {
   display: flex;
   justify-content: center;
