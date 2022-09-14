@@ -5,7 +5,7 @@ import SocialNetworks from "./../publicComponents/socialNetworks";
 const Home = () => {
 
     return (
-        <div className={"homePage flexRight relative"}>
+        <div className={""}>
             <Navbar
                 color={"white"}
                 isFixed={true}
@@ -13,7 +13,7 @@ const Home = () => {
             <HomeContent />
             <SocialNetworks
                 isAbsolute={true}
-                classes={"flexLeft"}
+                classes={""}
             />
         </div>
     )

@@ -1,14 +1,11 @@
 // libraries
-import { NextUIProvider } from '@nextui-org/react';
 
 // static files
-import "../../styles/bundle.scss"
+import "./../../public/index.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NextUIProvider>
-      <Component {...pageProps} />
-    </NextUIProvider>
+    <Component {...pageProps} />
   );
 }
 

@@ -2,7 +2,6 @@
 import propTypes from "prop-types";
 
 // libraries
-import { Input } from '@nextui-org/react';
 
 // components
 
