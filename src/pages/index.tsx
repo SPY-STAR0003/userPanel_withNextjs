@@ -2,8 +2,20 @@
 import Head from "next/head";
 import { NextPage } from "next/types";
 
+// libraries
+import { setLocale } from 'yup';
+
 // components
 import Home from "../components/home";
+
+setLocale({
+  mixed: {
+    required : 'این فیلد نمی تواند خالی باشد !',
+  },
+  string: {
+    min: ' حداقل تعداد کاراکتر این فیلد باید ${min} باشد !',
+  },
+});
 
 const HomePage : NextPage = () => {
 

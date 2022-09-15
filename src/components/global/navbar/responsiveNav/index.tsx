@@ -3,7 +3,7 @@ import {useState} from "react";
 
 // libraries
 import { Game, Home, Pen, People, SendMassage, Swap } from "../../../../assets/icons";
-import { ChevronDown } from "react-iconly";
+import { ChevronDown } from "../../../../assets/icons";
 
 // components
 import CloseCross from "../../elements/buttons/closeCross";
@@ -51,7 +51,7 @@ const ResponsiveNavbar : React.FC<ResponsiveNavProps> = ({setShowResponsiveNavba
                         text="مقالات"
                         Icon={Pen}
                         color={"black"}
-                        Icon2={<ChevronDown set="bulk" primaryColor="black"/>}
+                        Icon2={<ChevronDown color={"black"} primaryColor="black"/>}
                     />
                     <NavbarItem
                         text="تالار گفت و گو"

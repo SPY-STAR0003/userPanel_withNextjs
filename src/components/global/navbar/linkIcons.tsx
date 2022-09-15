@@ -2,7 +2,7 @@
 import {useState, lazy, Suspense} from "react";
 
 // libraries
-import { Bookmark, Buy, User} from "react-iconly";
+import { Bookmark, Buy, User} from "../../../assets/brokenIcons";
 
 // components
 import { Menu } from "../../../assets/icons";
@@ -27,13 +27,13 @@ const LinkIcons : React.FC<LinkIconsProps> = ({isWhite}) => {
     return (
         <div className={`relative flex items-center justify-center`}>
         <div onClick={() => setShowBookmarkList(!showBookmarkList)} className={`${isWhite ? "border-white" : "border-gray-900"} mx-1 cursor-pointer border-2 rounded-full p-3`}>
-            <Bookmark set="broken" primaryColor={isWhite ? "white" : "black"} />
+            <Bookmark color={isWhite ? "white" : "black"} />
         </div>
         <div onClick={() => setShowShopingList(!showShopingList)} className={`${isWhite ? "border-white" : "border-gray-900"} mx-1 cursor-pointer border-2 rounded-full p-3`}>
-            <Buy set="broken" primaryColor={isWhite ? "white" : "black"} />
+            <Buy color={isWhite ? "white" : "black"} />
         </div>
         <div onClick={() => setShowForm(!showForm)} className={`${isWhite ? "border-white" : "border-gray-900"} mx-1 cursor-pointer border-2 rounded-full p-3`}>
-            <User set="broken" primaryColor={isWhite ? "white" : "black"} />
+            <User color={isWhite ? "white" : "black"} />
         </div>
         <div onClick={() => setShowResponsiveNavbar(true)} className={`${isWhite ? "border-white" : "border-gray-900"} lg:hidden mx-1 cursor-pointer border-2 rounded-full p-3`}>
             <Menu classes="w-6 h-6" color={isWhite ? "white" : "black"} />
