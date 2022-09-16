@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 // next & react
-import Link from "next/Link";
+import Link from "next/link";
 
 // components
 import SocialNetworks from "../socialNetworks";
@@ -27,9 +27,9 @@ const ArticlesPageFooter = () => {
                 </div>
                 <div className="w-3"> 
                     <SocialNetworks
-                        isAbsolute={false}
+                        isFixed={false}
                         width={"w-10"}
-                        white={false}
+                        isWhite={false}
                         classes={"flexCenter"}
                         size={"fs-20"}
                     />

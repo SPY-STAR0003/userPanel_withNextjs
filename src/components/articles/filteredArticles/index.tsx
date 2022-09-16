@@ -1,7 +1,7 @@
 
 // components
-import AsideFiltering from "../../publicComponents/asideFiltering";
-import Navbar from "../../publicComponents/navbar";
+import AsideFiltering from "../../global/asideFiltering";
+import Navbar from "../../global/navbar";
 import ArticleCards from "./articleCards";
 
 const FilteredArticles = () => {

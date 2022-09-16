@@ -7,8 +7,8 @@ import  {FaUserAlt} from "react-icons/fa";
 import CloseCross from "./elements/buttons/closeCross";
 
 // components
-import Button from "./elements/form/button";
-import Input from "./elements/form/input";
+import MyButton from "./elements/form/button";
+import MyInput from "./elements/form/input";
 
 interface BookmarkListProps {
     setShowBookmarkList : React.Dispatch<SetStateAction<boolean>>
@@ -24,25 +24,25 @@ const BookmarkList : React.FC<BookmarkListProps> = ({setShowBookmarkList}) => {
             </header>
             <p> هنوز هیچ گزینه ای داخل لیست نشان شده های خود ندارید ! </p>
             {/* <form className="flex flex-col items-center p-4">
-                <Input
+                <MyInput
                     size="lg"
                     classes="mb-3"    
                     placeholder="نام کاربری"
                     visibleIcon={<FaUserAlt fill="currentColor" />}
                     hiddenIcon={<FaUserAlt fill="currentColor" />}
                 />
-                <Input
+                <MyInput
                     size="lg"
                     placeholder="رمز عبور"
                     classes="mt-1 mb-3"    
                 />
                 <Link href="/">
-                    <Button
+                    <MyButton
                         classes="mt-4"
                         color="gradient"
                     >
                         ورود 
-                    </Button>
+                    </MyButton>
                 </Link>
             </form>
             <div className={"flex flex-col items-center space-y-2"}>

@@ -1,7 +1,7 @@
 
 
 // components
-import ArticleCard from "../../publicComponents/articleCard";
+import ArticleCard from "../../global/articleCard";
 
 
 const ArticleCards = () => {

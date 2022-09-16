@@ -1,7 +1,12 @@
-// next & react
-import propTypes from 'prop-types';
 
-const FixedPicture = ({ picSrc, picHeight, children, scroll }) => {
+interface FixedPictureProps {
+    picSrc ?: string,
+    picHeight ?: number,
+    scroll ?: string
+    children ?: any
+}
+
+const FixedPicture : React.FC<FixedPictureProps> = ({ picSrc, picHeight, children, scroll }) => {
     return (
         <article
             style={{
@@ -14,12 +19,6 @@ const FixedPicture = ({ picSrc, picHeight, children, scroll }) => {
             {children}
         </article>
     )
-}
-
-FixedPicture.propTypes = {
-    picSrc : propTypes.string,
-    picHeight : propTypes.number,
-    scroll : propTypes.string
 }
 
 export default FixedPicture;

@@ -10,9 +10,10 @@ interface MyInputProps {
     type?: string
     name: string
     groupClasses ?: string
+    Icon ?: any
 }
 
-const MyInput : React.FC<MyInputProps> = ({groupClasses, size, classes, visibleIcon, hiddenIcon, ...props}) => {
+const MyInput : React.FC<MyInputProps> = ({groupClasses, Icon, size, classes, visibleIcon, hiddenIcon, ...props}) => {
     
     const [field, meta] = useField(props)
 
@@ -23,6 +24,9 @@ const MyInput : React.FC<MyInputProps> = ({groupClasses, size, classes, visibleI
                 {...props}
                 {...field}
             />
+            {
+                Icon ?? null
+            }
             {meta.touched && meta.error && <div className={"text-rose-600 text-sm font-bold mt-4"}>
                 {meta.error}    
             </div>}
