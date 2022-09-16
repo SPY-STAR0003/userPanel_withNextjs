@@ -11,25 +11,26 @@ interface BestAuthorProps {
     description : string,
     score : number,
     avatarLink : string
+    classes ?: string
 }
 
-const BestAuthor : React.FC<BestAuthorProps> = ({ picSrc, size, name, description, score, avatarLink }) => {
+const BestAuthor : React.FC<BestAuthorProps> = ({ picSrc, classes, size, name, description, score, avatarLink }) => {
     return (
         <Link href={avatarLink}>
-            <div className="flexColumn flexAlignCenter mb-6 mrl-5">
-                <img
-                    src={picSrc}
-                    // css={{ size: `$${size}` }}
-                    // zoomed
-                    className="cursor-pointer"
-                />
-                <span className="w-10 textCenter mt-2 mb-2 fs-10 bold-7"> 
+            <div className={`${classes} group flex flex-col items-center mb-6 hover:-translate-y-1 transition`}>
+                <div className={"overflow-hidden rounded-full"}>
+                    <img
+                        src={picSrc}
+                        className={`${size} group-hover:scale-[1.1] transition duration-300 cursor-pointer rounded-full`}
+                    />
+                </div>
+                <span className="text-center mt-2 mb-1 text-lg font-bold text-gray-900"> 
                     {name}
                 </span>
-                <span className="bold-3">
+                <span className="my-0.5 font-light">
                     {description}
                 </span>
-                <span className="fs-8 bold-5 gray">
+                <span className="text-sm font-bold text-gray-500">
                     {PN.convertEnToPe(score)} امتیاز
                 </span>
             </div>

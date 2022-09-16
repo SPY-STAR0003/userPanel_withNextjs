@@ -19,7 +19,7 @@ const Home : React.FC = () => {
             <HomeContent />
             <SocialNetworks
                 isFixed={true}
-                classes={""}
+                isWhite={true}
             />
         </div>
     )

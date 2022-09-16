@@ -11,21 +11,40 @@ interface MyInputProps {
     name: string
     groupClasses ?: string
     Icon ?: any
+    style ?: "solid" | "underlined" | "gray"
 }
 
-const MyInput : React.FC<MyInputProps> = ({groupClasses, Icon, size, classes, visibleIcon, hiddenIcon, ...props}) => {
+interface MyInputStylesProps {
+    name: string, css: string
+}
+
+const MyInput : React.FC<MyInputProps> = ({groupClasses, style = "underlined", Icon, size, classes, visibleIcon, hiddenIcon, ...props}) => {
+
+    const InputStyles : MyInputStylesProps[] = [
+        { name : "underlined", css : "border-b-2 focus:border-b-yellow-400 bg-transparent"},
+        { name : "solid" , css : "bg-white focus:scale-105 focus:shadow-lg" },
+        { name : "gray", css : "bg-gray-200/70 focus:scale-105 placeholder:text-gray-400"}
+    ]
+
+    let inputStyle : string = "";
+
+    InputStyles.forEach((item : MyInputStylesProps) => {
+        if (item.name === style) inputStyle = item.css 
+    })
     
     const [field, meta] = useField(props)
 
     return (
-        <div className={`${groupClasses} flex flex-col items-center`}>
+        <div className={`${groupClasses} relative flex flex-col items-center`}>
             <input
-                className={`${classes} border-b-2 placeholder:text-gray-500 text-stone-800 font-bold transition duration-300 focus:border-b-yellow-400 outline-none px-4 py-2 rounded-sm bg-transparent`}
+                className={`text-stone-800 placeholder:text-gray-500 font-bold transition duration-300 outline-none px-4 py-2 rounded-sm
+                    ${classes} ${inputStyle}
+                `}
                 {...props}
                 {...field}
             />
             {
-                Icon ?? null
+                Icon && (<button type="submit"> {Icon} </button>)
             }
             {meta.touched && meta.error && <div className={"text-rose-600 text-sm font-bold mt-4"}>
                 {meta.error}    

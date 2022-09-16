@@ -12,7 +12,7 @@ interface ButtonColorsType {
     css : string
 }
 
-const MyButton : React.FC<MyButtonProps> = ({size, classes, color, Icon, type, children}) => {
+const MyButton : React.FC<MyButtonProps> = ({size, classes, color = "purple", Icon, type = "submit", children}) => {
     
     let colors : ButtonColorsType[] = [
         { name : "purple", css : "bg-purple-800 hover:bg-purple-900" },
@@ -33,6 +33,7 @@ const MyButton : React.FC<MyButtonProps> = ({size, classes, color, Icon, type, c
     return (
         <button
             className={`${classes} ${colorBtn} px-6 py-2 text-white`}
+            type={type}
         >
             {children}
         </button>

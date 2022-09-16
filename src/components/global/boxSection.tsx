@@ -6,23 +6,27 @@ interface BoxSectionProps {
     boxTitle ?: string,
     boxDescription ?: string,
     size ?: string,
-    sortType ?: string,
+    isVertical ?: boolean,
     href : string
+    isTextLarge ?: boolean,
 }
 
-const BoxSection : React.FC<BoxSectionProps> = ({boxIcon, boxTitle, boxDescription, size, sortType = "vertical", href }) => {
-
-    let sort = sortType === "horizontal" ? "flexColumn" : "dFlex"
+const BoxSection : React.FC<BoxSectionProps> = ({boxIcon, isTextLarge = true, boxTitle, boxDescription, size, isVertical = true, href }) => {
 
     return (
         <Link href={href}>
-            <div className={`box ${sort} ${size} ptb-6 prl-4 textCenter radius-3 pointer`}>
-                <div className="boxHeader flexCenter">
+            <div 
+                className={`${isVertical ? "flex-col" : "flex-row"} ${size}
+                    py-6 px-8 text-center rounded cursor-pointer items-center justify-center
+                    hover:bg-gray-200 hover:-translate-y-2 transition duration-300`
+                }
+            >
+                <div className="flex items-center justify-center">
                     {boxIcon}
                 </div>
-                <div className='boxMain mr-3 mt-2 flexColumn'>
-                    <h2 className='fs-18 bold-9'> {boxTitle} </h2>
-                    <p className=' bold-4'> {boxDescription} </p>
+                <div className={`flex flex-col mt-2`}>
+                    <h2 className={`my-4 ${isTextLarge ? "text-3xl" : "text-xl"} text-center font-extrabold`}> {boxTitle} </h2>
+                    <p className='font-semibold leading-relaxed'> {boxDescription} </p>
                 </div>
             </div>
         </Link>

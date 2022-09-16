@@ -14,7 +14,7 @@ const FixedPicture : React.FC<FixedPictureProps> = ({ picSrc, picHeight, childre
                 background : `url(${picSrc}) ${scroll} no-repeat`,
                 height : `${picHeight}rem`,
             }}
-            className="flexCenter"
+            className="flex items-center justify-center"
         >
             {children}
         </article>

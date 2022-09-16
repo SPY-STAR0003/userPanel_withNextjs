@@ -8,80 +8,90 @@ import BoxSection from "../../../global/boxSection";
 
 const SortArticles = () => {
     return (
-        <article className="flexColumn flexCenter mb-4 mt-12">
-            <header className="mb-8"> 
-                <h1 className="fs-18"> با انتخاب موضوع مورد نظر خود، راحت تر به آن چه می خواهید برسید ! </h1>    
+        <article className="flex flex-col items-center flexCenter mb-8 mt-12 px-6">
+            <header className="mb-8 text-center"> 
+                <h1 className="text-3xl font-bold leading-relaxed"> با انتخاب موضوع مورد نظر خود، راحت تر به آن چه می خواهید برسید ! </h1>    
             </header>
-            <main className="dFlex flexWrap">
+            <main className="flex flex-row flex-wrap">
                 <BoxSection
-                    boxIcon = {<FaLaptopCode />}
+                    boxIcon = {<FaLaptopCode className={"w-12 h-12"} />}
                     boxTitle= "تکنولوژی"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaAtom />}
+                    boxIcon = {<FaAtom className={"w-12 h-12"} />}
                     boxTitle= "علم و دانش"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaSatellite />}
+                    boxIcon = {<FaSatellite className={"w-12 h-12"} />}
                     boxTitle= "فضا"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaTableTennis />}
+                    boxIcon = {<FaTableTennis className={"w-12 h-12"} />}
                     boxTitle= "ورزشی"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaSpellCheck />}
+                    boxIcon = {<FaSpellCheck className={"w-12 h-12"} />}
                     boxTitle= "زبان های خارجه"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaGlobeAsia />}
+                    boxIcon = {<FaGlobeAsia className={"w-12 h-12"} />}
                     boxTitle= "تاریخ و جغرافیا"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaPenNib />}
+                    boxIcon = {<FaPenNib className={"w-12 h-12"} />}
                     boxTitle= "داستان و رمان"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaSchool />}
+                    boxIcon = {<FaSchool className={"w-12 h-12"} />}
                     boxTitle= "درس و دانشگاه"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaSmileBeam />}
+                    boxIcon = {<FaSmileBeam className={"w-12 h-12"} />}
                     boxTitle= "کودکانه"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
                 <BoxSection
-                    boxIcon = {<FaPeopleArrows />}
+                    boxIcon = {<FaPeopleArrows className={"w-12 h-12"} />}
                     boxTitle= "نیازمند تکمیل"
-                    size="w-2"
-                    sortType="horizontal"
+                    size="lg:w-[10%] md:w-[25%] sm:w-[50%] w-full"
+                    isVertical={false}
                     href="/articles/filteredArticles"
+                    isTextLarge={false}
                 />
             </main>
         </article>

@@ -15,9 +15,9 @@ import Subscribe from "./main/subscribe";
 const Articles = () => {
     return (
         <div className="articlesPage flexColumn">
-            <NavBar isWhite={false} />
-            <SearchBox heightClass="h-8" />
-            <main className={"articlesPageMain flexColumn w-10"}>
+            <NavBar isWhite={false} logoSrc={"/images/logo.png"} />
+            <SearchBox heightClass="h-96" />
+            <main className={"flex flex-col"}>
                 <ImportantLinks />
                 <SortArticles />
                 <Sentence />

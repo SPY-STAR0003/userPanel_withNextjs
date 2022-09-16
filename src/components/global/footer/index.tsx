@@ -8,24 +8,27 @@ import SocialNetworks from "../socialNetworks";
 const ArticlesPageFooter = () => {
     return (
         <footer>
-            <div  className="flexSpaceBetween mt-15 pb-8"> 
-                <div className="flexCenter w-3">
+            <div className="flex flex-col justify-between mt-20 pb-8"> 
+                <div className="flex sm:flex-row flex-col flex-wrap items-center justify-center">
                     <Link href={"/articles"}>
-                        <div className="prl-5 bold-6 fs-10 pointer"> مقالات </div>
+                        <div className="px-8 sm:py-0 py-4 font-semibold sm:text-sm text-lg cursor-pointer text-gray-400"> مقالات </div>
                     </Link>
                     <Link href={"/register"}>
-                        <div className="prl-5 bold-6 fs-10 pointer"> ثبت نام </div>
+                        <div className="px-8 sm:py-0 py-4 font-semibold sm:text-sm text-lg cursor-pointer text-gray-400"> ثبت نام </div>
                     </Link>
                     <Link href={"/discussionHall"}>
-                        <div className="prl-5 bold-6 fs-10 pointer"> تالار گفت و گو </div>
+                        <div className="px-8 sm:py-0 py-4 font-semibold sm:text-sm text-lg cursor-pointer text-gray-400"> تالار گفت و گو </div>
+                    </Link>
+                    <Link href={"/discussionHall"}>
+                        <div className="px-8 sm:py-0 py-4 font-semibold sm:text-sm text-lg cursor-pointer text-gray-400"> ارتباط با ما </div>
                     </Link>
                 </div>
-                <div className="fs-8 gray w-4 textCenter">
+                <div className="flex justify-center mt-12">
                     <Link href={"/"}>
-                        <img className="w-2 pointer" src="/images/logo.png" alt="logo"/>
+                        <img className="w-24 h-24 cursor-pointer brightness-0 hover:brightness-100 transition duration-300" src="/images/logo.png" alt="logo"/>
                     </Link>
                 </div>
-                <div className="w-3"> 
+                <div className="flex justify-center mt-8"> 
                     <SocialNetworks
                         isFixed={false}
                         width={"w-10"}
@@ -35,8 +38,8 @@ const ArticlesPageFooter = () => {
                     />
                 </div>
             </div>
-            <div style={{ borderTop : "1px solid #efefef" }} className="prl-15 ptb-8 flexCenter w-10">
-                <span className="fs-7"> COPYRIGHT © 2022 MOHAMMAD ZOURMAND </span>
+            <div style={{ borderTop : "1px solid #efefef" }} className="px-6 py-5 flex justify-center w-full">
+                <span className="text-sm text-gray-400 text-center"> COPYRIGHT © 2022 MOHAMMAD ZOURMAND </span>
             </div>
         </footer>
     )
