@@ -8,9 +8,9 @@ const FilteredArticles = () => {
 
     return (
         <div className="filteredArticles flexColumn">
-            <Navbar />
+            <Navbar isWhite={false} />
             <main className="flexColumn">
-                <AsideFiltering />
+                {/* <AsideFiltering /> */}
                 <ArticleCards />
             </main>
         </div>

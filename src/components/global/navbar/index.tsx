@@ -14,7 +14,7 @@ interface NavBarProps {
     back?: string
 }
 
-const NavBar : React.FC<NavBarProps> = ({logoSrc, isWhite, isFixed, back}) => {
+const NavBar : React.FC<NavBarProps> = ({logoSrc = "/images/logo.png", isWhite, isFixed, back}) => {
     return (
         <nav className={`${isFixed ? "absTop" : ""} ${back??""}
             flex items-center justify-between lg:px-6 px-2 py-4

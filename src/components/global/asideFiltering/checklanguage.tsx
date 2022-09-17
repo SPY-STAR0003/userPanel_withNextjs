@@ -2,19 +2,11 @@
 import { useState, useMemo } from 'react';
 
 // libraies
-import { Dropdown } from "@nextui-org/react";
 
 // schemas
 import { languageFilterItems } from "../../../schemas/asideFiltering";
 
 const CheckLanguage = () => {
-
-    const [selectedLanguage, setSelectedLanguage] = useState(new Set(["همه"]));
-
-    const selectLanguage = useMemo(
-      () => Array.from(selectedLanguage).join(", ").replaceAll("_", " "),
-      [selectedLanguage]
-    );
 
     return (
         <section className='mt-5'>
@@ -22,7 +14,7 @@ const CheckLanguage = () => {
                 <h5> دسته بندی زبان مقالات </h5> 
             </header>
             <main className="flexCenter flexWrap letter mt-3">
-                <Dropdown>
+                {/* <Dropdown>
                     <Dropdown.Button id="asideFilteringDropdown2" color="error" css={{ tt: "capitalize", direction : "ltr" }} >
                         {selectLanguage}
                     </Dropdown.Button>
@@ -40,7 +32,7 @@ const CheckLanguage = () => {
                             ))
                         }
                     </Dropdown.Menu>
-                </Dropdown>
+                </Dropdown> */}
             </main>
         </section>
     )

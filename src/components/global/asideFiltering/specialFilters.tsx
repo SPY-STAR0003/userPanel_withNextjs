@@ -2,19 +2,11 @@
 import { useState, useMemo } from 'react';
 
 // libraies
-import { Dropdown } from "@nextui-org/react";
 
 // schemas
 import { filterItems } from "../../../schemas/asideFiltering";
 
 const SpecialFilters = () => {
-
-    const [selectedFilters, setSelectedFilters] = useState(new Set(["همه"]));
-
-    const selectFilters = useMemo(
-      () => Array.from(selectedFilters).join(", ").replaceAll("_", " "),
-      [selectedFilters]
-    );
 
     return (
         <section className='mt-5'>
@@ -22,7 +14,7 @@ const SpecialFilters = () => {
                 <h5> دسته بندی های خاص </h5> 
             </header>
             <main className="flexCenter flexWrap letter mt-3">
-                <Dropdown>
+                {/* <Dropdown>
                     <Dropdown.Button id="asideFilteringDropdown1" color="error" css={{ tt: "capitalize", direction : "ltr" }} >
                         {selectFilters}
                     </Dropdown.Button>
@@ -40,7 +32,7 @@ const SpecialFilters = () => {
                             ))
                         }
                     </Dropdown.Menu>
-                </Dropdown>
+                </Dropdown> */}
             </main>
         </section>
     )
