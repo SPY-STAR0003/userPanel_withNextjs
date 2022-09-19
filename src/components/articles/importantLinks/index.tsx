@@ -3,7 +3,7 @@
 import {FaFireAlt, FaHeart, FaBuffer, FaRegGrin, FaStopwatch, FaUniversity} from "react-icons/fa";
 
 // components
-import BoxSection from "../../../global/boxSection";
+import BoxSection from "../../global/boxSection";
 
 const ImportantLinks = () => {
 

@@ -1,7 +1,7 @@
 
 
 // components
-import SingleArticle from "../../components/articles/singleArticle";
+import SingleArticle from "../../components/singleArticle";
 
 const SingleArticlePage = () => {
 

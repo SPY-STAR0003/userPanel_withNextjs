@@ -1,4 +1,4 @@
-import FilteredArticles from "../../../components/articles/filteredArticles";
+import FilteredArticles from "../../../components/filteredArticles";
 
 
 const FilteredArticlesPage = () => {

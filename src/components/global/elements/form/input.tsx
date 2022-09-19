@@ -11,7 +11,7 @@ interface MyInputProps {
     name: string
     groupClasses ?: string
     Icon ?: any
-    style ?: "solid" | "underlined" | "gray"
+    style ?: "solid" | "underlined" | "gray" | "bordered"
 }
 
 interface MyInputStylesProps {
@@ -23,7 +23,8 @@ const MyInput : React.FC<MyInputProps> = ({groupClasses, style = "underlined", I
     const InputStyles : MyInputStylesProps[] = [
         { name : "underlined", css : "border-b-2 focus:border-b-yellow-400 bg-transparent"},
         { name : "solid" , css : "bg-white focus:scale-105 focus:shadow-lg" },
-        { name : "gray", css : "bg-gray-200/70 focus:scale-105 placeholder:text-gray-400"}
+        { name : "gray", css : "bg-gray-200/70 focus:scale-105 placeholder:text-gray-400"},
+        { name : "bordered", css : "border border-gray-400 !rounded-3xl focus:scale-105" }
     ]
 
     let inputStyle : string = "";

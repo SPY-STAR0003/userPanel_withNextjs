@@ -20,6 +20,8 @@ const MyButton : React.FC<MyButtonProps> = ({size, classes, color = "purple", Ic
         { name : "success", css : "bg-green-500 hover:bg-green-600" },
         { name : "warning", css : "bg-yellow-500 hover:bg-yellow-600" },
         { name : "primary", css : "bg-cyan-500 hover:bg-cyan-600" },
+        { name : "dark", css : "bg-stone-800 hover:bg-stone-900 transition" },
+        { name : "white", css : "bg-white text-gray-900 border border-gray-900 rounded-3xl transition" },
     ]
 
     let colorBtn : string = "";

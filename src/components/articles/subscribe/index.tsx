@@ -1,8 +1,8 @@
 
 // components
 import { Form, Formik } from "formik";
-import MyButton from "../../../global/elements/form/button";
-import MyInput from "../../../global/elements/form/input";
+import MyButton from "../../global/elements/form/button";
+import MyInput from "../../global/elements/form/input";
 
 interface SubscribeFormProps {
     email : string

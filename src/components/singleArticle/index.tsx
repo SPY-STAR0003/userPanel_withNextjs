@@ -1,7 +1,7 @@
 
 // components
 
-import AsideNavbar from "../../global/asideNavbar";
+import AsideNavbar from "../global/asideNavbar";
 import SingleArticleAside from "./aside";
 import SingleArticleContent from "./content";
 
